@@ -19,8 +19,8 @@ void sort_a(int* ar,int n)
 }
 int main()
 {
-	std::ifstream in("input.txt");
-    std::ofstream out("output.txt");
+	std::ifstream in("01.in");
+    std::ofstream out("01.out");
 
     int mas[3'000'000];
     int n;
@@ -31,5 +31,8 @@ int main()
     sort_a(mas, n);
 
     for(int i=0;i<n;i++)
+    {
         out << mas[i] << " ";
+        cout<<mas[i]<<" ";
+    }
 }
